@@ -19,6 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding-top: 48px;
 }
 .hero-img {
@@ -223,4 +224,46 @@ footer button {
   border-radius: 29px;
   background: #855fb1;
   margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+  .text-wrapper h1 {
+    font-size: 48px;
+    width: 339px;
+  }
+  .text-wrapper p {
+    width: 457px;
+  }
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .photos-container {
+    flex-wrap: nowrap;
+  }
+  .meeting-text-wrapper {
+    margin-top: 38px;
+  }
+  .meeting-text-wrapper h2 {
+    font-size: 40px;
+    width: 445px;
+    margin-top: 16px;
+  }
+  .meeting-text-wrapper p {
+    width: 573px;
+  }
+  footer {
+    margin-top: 192px;
+    padding: 92px 98px 66px;
+  }
+  footer h2 {
+    font-size: 40px;
+    width: 457px;
+  }
+  footer p {
+    margin-top: 32px;
+  }
+  footer button {
+    margin-top: 40px;
+  }
 }
