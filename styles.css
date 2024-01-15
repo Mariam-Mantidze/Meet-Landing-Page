@@ -99,9 +99,11 @@ header {
 .blue {
   background: #4d96a9;
 }
+
 .blue:hover {
   background: #71c0d4;
 }
+
 .what {
   border-radius: 29px;
   background: #855fb1;
