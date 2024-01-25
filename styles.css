@@ -3,12 +3,7 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   background: #fafafa;
-}
-main {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  */
+  overflow-x: hidden;
 }
 .hero-container {
   display: flex;
@@ -135,6 +130,12 @@ header {
   line-height: 26px; /* 162.5% */
 }
 
+.meeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .photos-container {
   display: flex;
   flex-direction: row;
@@ -144,6 +145,7 @@ header {
   gap: 25px;
   align-content: center;
   margin-top: 64px;
+  width: 330px;
 }
 
 .photos-container img {
@@ -266,7 +268,10 @@ footer button {
     justify-content: center;
   }
   .photos-container {
-    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .photos-container img {
+    width: 164px;
   }
   .meeting-text-wrapper {
     margin-top: 38px;
@@ -335,6 +340,9 @@ footer button {
   }
   .meeting p {
     font-size: 18px;
+  }
+  .photos-container img {
+    width: 255px;
   }
 
   footer {
